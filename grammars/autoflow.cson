@@ -3,7 +3,6 @@
 'fileTypes': [
   'af'
 ]
-'firstLineMatch': '^#!.*\\b(af)|(?i:^\\s*#\\s*-\\*-[^*]*mode:\\s*autoflow-script[^*]*-\\*-)'
 'patterns': [
   {
     'include': '#step'
@@ -58,12 +57,12 @@
   'step':
     'patterns': [
       {
-        'begin': '(?=\\S)'
+        'begin': '*'
         'end': '\\){'
         'endCaptures':
           '0':
-            'name': 'step.terminator.autoflow'
-        'name': 'step.autoflow'
+            'name': 'variable.other.step.autoflow'
+        'name': 'variable.other.autoflow'
       }
     ]
   'case-clause':
