@@ -57,7 +57,8 @@
   'step':
     'patterns': [
       {
-        'end': '\\){'
+        'begin': '(^)'
+        'end': '(\\){)'
         'endCaptures':
           '0':
             'name': 'variable.other.step.autoflow'
