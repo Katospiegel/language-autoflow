@@ -1,4 +1,4 @@
-'.source.shell':
+'.source.autoflow':
   'editor':
     'commentStart': '# '
     'foldEndPattern': '^\\s*(\\}|(done|fi|esac)\\b)'
