@@ -1,31 +1,13 @@
-'scopeName': 'source.shell'
-'name': 'Shell Script'
+'scopeName': 'autoflow.shell'
+'name': 'Autoflow Script'
 'fileTypes': [
-  'sh'
-  'bash'
-  'ksh'
-  'zsh'
-  'zsh-theme'
-  'zshenv'
-  'zlogin'
-  'zlogout'
-  'zprofile'
-  'zshrc'
-  'bashrc'
-  'bash_profile'
-  'bash_login'
-  'profile'
-  'bash_logout'
-  '.textmate_init'
-  'npmrc'
-  'PKGBUILD'
-  'install'
-  'cygport'
-  'bats'
-  'ebuild'
+  'af'
 ]
-'firstLineMatch': '^#!.*\\b(bash|zsh|sh|tcsh|ksh|dash|ash|csh|rc)|(?i:^\\s*#\\s*-\\*-[^*]*mode:\\s*shell-script[^*]*-\\*-)'
+'firstLineMatch': '^#!.*\\b(af)|(?i:^\\s*#\\s*-\\*-[^*]*mode:\\s*autoflow-script[^*]*-\\*-)'
 'patterns': [
+  {
+    'include': '#step'
+  }
   {
     'include': '#comment'
   }
@@ -73,6 +55,17 @@
   }
 ]
 'repository':
+  'step':
+    'patterns': [
+      {
+        'begin': '(?=\\S)'
+        'end': '){'
+        'endCaptures':
+          '0':
+            'name': 'step.terminator.autoflow.shell'
+        'name': 'step.autoflow.shell'
+      }
+    ]
   'case-clause':
     'patterns': [
       {
