@@ -1,4 +1,4 @@
-'scopeName': 'autoflow.shell'
+'scopeName': 'source.autoflow'
 'name': 'Autoflow Script'
 'fileTypes': [
   'af'
@@ -62,8 +62,8 @@
         'end': '){'
         'endCaptures':
           '0':
-            'name': 'step.terminator.autoflow.shell'
-        'name': 'step.autoflow.shell'
+            'name': 'step.terminator.autoflow'
+        'name': 'step.autoflow'
       }
     ]
   'case-clause':
