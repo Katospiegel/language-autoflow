@@ -1,16 +1,7 @@
-'.source.shell':
-  '#!/usr/bin/env':
-    'prefix': 'env'
-    'body': '#!/usr/bin/env $1\n'
-  '#!/usr/bin/env bash':
-    'prefix': 'bash'
-    'body': '#!/usr/bin/env bash\n'
-  '#!/bin/sh':
-    'prefix': 'sh'
-    'body': '#!/bin/sh\n'
-  '#!/usr/bin/env zsh':
-    'prefix': 'zsh'
-    'body': '#!/usr/bin/env zsh\n'
+'.source.autoflow':
+  '#!/af':
+    'prefix': 'af'
+    'body': '#!/af $1\n'
   'alias …':
     'prefix': 'alias'
     'body': 'alias ${1:name}="${2:#statement}"'
@@ -35,3 +26,6 @@
   'while … done':
     'prefix': 'while'
     'body': 'while ${2:[[ ${1:condition} ]]}; do\n\t${0:#statements}\ndone'
+  '){ … ? … }':
+    'prefix': '){'
+    'body': '){ \n\t module load \n ? \n\t ${0:#statements} \n}'
