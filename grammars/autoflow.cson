@@ -59,7 +59,7 @@
     'patterns': [
       {
         'begin': '(?=\\S)'
-        'end': '){'
+        'end': '\\){'
         'endCaptures':
           '0':
             'name': 'step.terminator.autoflow'
