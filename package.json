@@ -1,15 +1,15 @@
 {
-  "name": "language-shellscript",
-  "version": "0.22.4",
-  "description": "ShellScript language support in Atom",
+  "name": "language-autoflow",
+  "version": "0.1.1",
+  "description": "Autoflow language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-shellscript",
+  "homepage": "https://github.com/Katospiegel/language-autoflow",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-shellscript.git"
+    "url": "https://github.com/Katospiegel/language-autoflow.git"
   },
   "license": "MIT",
   "bugs": {
