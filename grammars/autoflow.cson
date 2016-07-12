@@ -57,12 +57,16 @@
   'step':
     'patterns': [
       {
-        'begin': '(^)'
-        'end': '(\\){)'
-        'endCaptures':
+        'captures':
           '0':
-            'name': 'variable.other.step.autoflow'
-        'name': 'variable.other.autoflow'
+            'name': 'markup.bold.step.autoflow'
+        'match': '\\b([^\\s\\\\=]+(\\)\\{))'
+      }
+      {
+        'captures':
+          '1':
+            'name': 'markup.italic.step.autoflow'
+        'match': '\\b([^\\s\\\\=]+(\\)))'
       }
     ]
   'case-clause':
